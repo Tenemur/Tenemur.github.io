@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <div class="text-center">
+      <h1 class="display-4">Survey Name</h1>
+      <p class="lead">Subtitle for the Survey Name</p>
+    </div>
+    <!-- Верхние Кнопки -->
+    <ul class="nav nav-tabs nav-justified id="myTab role="tablist">
+       
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" href="/index.html" role="tab" aria-controls="home-tab-pane" aria-selected="true" id="1">Step 1</a> 
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" href="/2.html" role="tab" aria-controls="profile-tab-pane" aria-selected="false" id="2">Step 2</a> 
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" href="/3.html" role="tab" aria-controls="contact-tab-pane" aria-selected="false"id="3">Step 3</a> 
+      </li>
+        
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+        
+      </div>
+      
+    </ul>
+    <!-- Все кнопки и строки -->
+    <div class="tab-content">
+      <div class="tab-pane fade pt-4 show active" id="step-1" role="tabpanel" aria-labelledby="step-1-tab">
+       
+        <div class="row">
+        <div class="col-md-3 mb-3">
+          <div>
+          <label class="form-label">Sex</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sex-male" value="option1">
+            <label class="form-check-label" for="sex-male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sex-female" value="option2">
+            <label class="form-check-label" for="sex-female">Female</label>
+          </div>
+        </div>
+          <div class="col-md-3 mb-3">
+            <div class="mb-3">
+              <label class="form-label for=age">Age</label>
+              <input type="number" class="form-control" id="age" name="age">
+            </div>
+
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="mb-3">
+              <label class="form-label for=phone">Phone</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+
+          </div>
+        </div> 
+
+       
+
+        
+      </div>
+      <div class="tab-pane fade pt-4 show active" id="step-2" role="tabpanel" aria-labelledby="step-1-tab">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Firstname">
+            
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="mb-3">
+                <label class="form-label for=phone">email</label>
+                <input type="tel" class="form-control" id="phone "placeholder="name@example.com">
+              </div>
+  
+            </div>
+          </div> 
+      </div>
+      <div class="tab-pane fade pt-4 show active" id="step-2" role="tabpanel" aria-labelledby="step-1-tab">
+        <div class="row">
+          <div class="col-md-9 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Adress</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="123 street name">
+            
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="mb-3">
+                <label class="form-label for=phone">Apartmetment</label>
+                <input type="tel" class="form-control" id="phone "placeholder="B3 4t">
+              </div>
+  
+            </div>
+          </div> 
+      </div>
+      <div class="tab-pane fade pt-4 show active" id="step-2" role="tabpanel" aria-labelledby="step-1-tab">
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">City</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="City">
+            
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="mb-3">
+                <label class="form-label for=phone">Zip</label>
+                <input type="tel" class="form-control" id="phone "placeholder="123">
+              </div>
+  
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Country</label>
+    
+    <div class="form-floating">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected>--Select Country--</option>
+      </select>
+      
+    </div>
+          </div> 
+      </div>
+    <a href="/2.html"> <button type="button" class="btn btn-outline-secondary d-block ms-auto " >Step 2 </button></a> 
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
